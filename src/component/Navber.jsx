@@ -5,7 +5,7 @@ import { AuthContext } from "../providers/AuthProvider";
 const Navber = () => {
   const { user, logOut } = useContext(AuthContext);
 
-  const handleSingOut = (e) => {
+  const handleSingOut = () => {
     logOut().then().catch();
   };
   const nabLink = (
@@ -17,7 +17,7 @@ const Navber = () => {
             isPending
               ? "pending"
               : isActive
-              ? "bg-[#2ecc71] text-xl font-semibold"
+              ? "bg-[#f39c12] text-xl font-semibold"
               : ""
           }
         >
@@ -31,7 +31,7 @@ const Navber = () => {
             isPending
               ? "pending"
               : isActive
-              ? "bg-[#2ecc71] text-xl font-semibold"
+              ? "bg-[#f39c12] text-xl font-semibold"
               : ""
           }
         >
@@ -45,11 +45,11 @@ const Navber = () => {
             isPending
               ? "pending"
               : isActive
-              ? "bg-[#2ecc71] text-xl font-semibold"
+              ? "bg-[#f39c12] text-xl font-semibold"
               : ""
           }
         >
-          Add Tourists Sports
+          Add Tourists Spots
         </NavLink>
       </li>
       <li>
@@ -59,7 +59,7 @@ const Navber = () => {
             isPending
               ? "pending"
               : isActive
-              ? "bg-[#2ecc71] text-xl font-semibold"
+              ? "bg-[#f39c12] text-xl font-semibold"
               : ""
           }
         >
@@ -95,7 +95,7 @@ const Navber = () => {
             {nabLink}
           </ul>
         </div>
-        <a className="btn btn-ghost text-2xl text-purple-400  ">
+        <a className="btn btn-ghost text-2xl text-[#f39c12] ">
           TravelNestle.com
         </a>
       </div>

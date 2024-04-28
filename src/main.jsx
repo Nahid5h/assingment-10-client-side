@@ -14,6 +14,8 @@ import Login from './component/Login.jsx';
 import Register from './component/Register.jsx';
 import AuthProvider from './providers/AuthProvider.jsx';
 import PrivetRout from './privetRout/PrivetRout.jsx';
+import ViewDetail from './component/ViewDetail.jsx';
+import UpdateINformation from './component/UpdateINformation.jsx';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +28,8 @@ const router = createBrowserRouter([
       },
       {
         path:"/allTSport",
-        element:<AllTSport></AllTSport>
+        element:<AllTSport></AllTSport>,
+        loader:()=>fetch('http://localhost:5000/spot')
       },
       {
         path:"/addTSport",
@@ -34,7 +37,9 @@ const router = createBrowserRouter([
       },
       {
         path:"/myList",
-        element:<MyList></MyList>
+        element:<PrivetRout>
+          <MyList></MyList>
+        </PrivetRout>
       },
       {
         path:"/login",
@@ -43,6 +48,17 @@ const router = createBrowserRouter([
       {
         path:"/register",
         element:<Register></Register>
+
+      },
+      {
+        path:'/viewDetail/:id',
+        element:<PrivetRout><ViewDetail></ViewDetail></PrivetRout>,
+        // loader:()=>fetch(`http://localhost:5000/spot`)
+
+      },
+      {
+        path:"/updateInformation/:id",
+        element:<UpdateINformation></UpdateINformation>
 
       }
     ]

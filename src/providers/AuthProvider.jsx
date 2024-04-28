@@ -13,27 +13,34 @@ const auth = getAuth(app);
 
 const AuthProvider = ({children}) => {
     const [user,setUser]=useState(null);
+    const [loading,setLoading]=useState(true);
 
     const creatUser =(email,password)=>{
+        setLoading(true);
         return createUserWithEmailAndPassword(auth,email,password)
     }
 
     const updateUserProfile =(name, image)=>{
+        setLoading(true)
         return updateProfile(auth.currentUser,{
             displayName:name,
             photoURL:image,
         });
     }
     const singIN=(email,password)=>{
+        setLoading(true)
   return signInWithEmailAndPassword(auth,email,password)
     }
     const googleLogIn =()=>{
+        setLoading(true)
         return signInWithPopup(auth,provider)
     }
     const gitHublogin =()=>{
+        setLoading(true)
         return  signInWithPopup(auth,gitpro)
     }
     const logOut =()=>{
+        setLoading(true)
         return signOut(auth)
     }
 
@@ -41,6 +48,7 @@ useEffect(()=>{
    const unSubscribe= onAuthStateChanged(auth,currentUser=>{
         console.log('user in the state changed', currentUser);
         setUser(currentUser)
+        setLoading(false)
     })
     return()=>{
         unSubscribe();
@@ -49,7 +57,7 @@ useEffect(()=>{
 
     const authInfo={
         user,
-      
+      loading,
         creatUser,
         updateUserProfile,
         googleLogIn,
