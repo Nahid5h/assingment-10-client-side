@@ -1,9 +1,13 @@
+import Banner from "./Banner";
+import TouristSpotSection from "./TouristSpotSection";
+
 
 
 const Home = () => {
     return (
         <div>
-            <h2>this is home</h2>
+          <Banner></Banner>
+          <TouristSpotSection></TouristSpotSection>
         </div>
     );
 };
