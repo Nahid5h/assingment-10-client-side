@@ -22,10 +22,10 @@ const SpotCard = ({ spot }) => {
               {tourists_spot_name}
             </h1>
             <div className="flex  gap-3 mt-4">
-              <button className="btn text-xl w-48 rounded-full ">
+              <button className="btn text-xl rounded-full ">
                 Cost:{average_cost}
               </button>
-              <button className="btn text-xl w-48 rounded-full ">
+              <button className="btn text-xl rounded-full ">
                 Visiters:{totalVisitorsPerYer}
               </button>
             </div>

@@ -27,7 +27,7 @@ const AddTSport = () => {
         }
         console.log(newSpot);
     //   send data to the server 
-    fetch('http://localhost:5000/addSpot',{
+    fetch('https://assingment-10-server-three.vercel.app/addSpot',{
         method:'POST',
         headers:{
             'content-type':'application/json'

@@ -8,7 +8,7 @@ const MyList = () => {
   const [item, setItem] = useState([]);
   const [control ,setControl]=useState(false)
   useEffect(() => {
-    fetch(`http://localhost:5000/myCard/${user?.email}`)
+    fetch(`https://assingment-10-server-three.vercel.app/myCard/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         // console.log(data)
@@ -27,7 +27,7 @@ const MyList = () => {
       confirmButtonText: "Yes, delete it!"
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/delete/${id}`,{
+        fetch(`https://assingment-10-server-three.vercel.app/delete/${id}`,{
           method:"DELETE",
         })
         .then(res=>res.json())

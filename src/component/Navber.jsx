@@ -70,7 +70,7 @@ const Navber = () => {
   );
   return (
     <div className="navbar bg-base-100">
-      <div className="navbar-start">
+      <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -95,7 +95,7 @@ const Navber = () => {
             {nabLink}
           </ul>
         </div>
-        <a className="btn btn-ghost text-2xl text-[#f39c12] ">
+        <a className="btn btn-ghost w-20 lg:text-2xl text-[#f39c12] ">
           TravelNestle.com
         </a>
       </div>
@@ -104,10 +104,10 @@ const Navber = () => {
       </div>
       <div className="navbar-end gap-3">
         {user ? (
-          <div className="flex items-center">
+          <div className="flex items-center ">
             <div className="tooltip" data-tip={user?.displayName || 'user name not found'}>
             <div className="avatar">
-                <div className="w-12 rounded-full">
+                <div className=" w-10 rounded-full">
                   <img src={user?.photoURL ||"https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
                   
                   } />
@@ -116,20 +116,20 @@ const Navber = () => {
             </div>
             <a
               onClick={handleSingOut}
-              className="btn bg-[#f39c12] text-xl rounded-full text-white"
+              className="btn bg-[#f39c12]  text-xl rounded-full text-white"
             >
               Logout
             </a>
           </div>
         ) : (
-          <div>
+          <div className="flex">
             <Link to="/login">
-              <a className="btn bg-[#f39c12] text-xl rounded-full text-white">
+              <a className="btn bg-[#f39c12] lg:text-xl rounded-full text-white">
                 Login
               </a>
             </Link>
             <Link to="/register">
-              <a className="btn  bg-[#f39c12] text-xl rounded-full text-white">
+              <a className="btn  bg-[#f39c12] lg:text-xl rounded-full text-white">
                 Register
               </a>
             </Link>

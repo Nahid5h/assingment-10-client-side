@@ -7,7 +7,7 @@ const UpdateINformation = () => {
     const { id }= useParams();
     const [information,setInformation]=useState({})
     useEffect(()=>{
-        fetch(`http://localhost:5000/viewDetail/${id}`)
+        fetch(`https://assingment-10-server-three.vercel.app/viewDetail/${id}`)
         .then(res=>res.json())
         .then(data=>{
             setInformation(data)
@@ -34,7 +34,7 @@ const UpdateINformation = () => {
                 }
                 console.log(updateSpot);
             //   send data to the server 
-            fetch(`http://localhost:5000/update/${id}`,{
+            fetch(`https://assingment-10-server-three.vercel.app/update/${id}`,{
                 method:'PUT',
                 headers:{
                     'content-type':'application/json'
@@ -168,6 +168,7 @@ const UpdateINformation = () => {
               <select
                 className="select select-bordered w-full "
                 name="travel_time"
+                defaultValue={information.travel_time}
               >
                 <option disabled selected>
                   Select your Travel_time
@@ -179,7 +180,7 @@ const UpdateINformation = () => {
                 <option>Thursday </option>
                 <option>Friday </option>
                 <option>Saturday </option>
-                defaultValue={information.travel_time}
+             
          
               </select>
             </div>
@@ -190,8 +191,8 @@ const UpdateINformation = () => {
               <select
                 className="select select-bordered w-full "
                 name="totalVisitorsPerYer"
-                
-              >
+                defaultValue={information.totalVisitorsPerYer} 
+              > 
                 <option disabled selected>
                   Select Number
                
@@ -203,7 +204,7 @@ const UpdateINformation = () => {
                 <option>700000 </option>
                 <option>800000</option>
                 <option>More:90000 </option>
-                defaultValue={information.totalVisitorsPerYer}
+               
          
               </select>
             </div>

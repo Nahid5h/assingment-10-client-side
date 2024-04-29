@@ -6,7 +6,7 @@ const ViewDetail = () => {
   const [item, setItem] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/viewDetail/${id}`)
+    fetch(`https://assingment-10-server-three.vercel.app/viewDetail/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setItem(data);

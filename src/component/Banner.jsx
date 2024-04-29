@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="relative">
+    <div className="relative  w-full">
       <div className="carousel w-full h-[700px] rounded-2xl">
         <div id="slide1" className="carousel-item relative w-full">
           <img
@@ -45,13 +45,13 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-0 ml-72 mt-52">
-        <h1 className=" text-5xl text-center text-white">
+      <div className="absolute top-0 ml-16 lg:ml-72 mt-52">
+        <h1 className=" lg:text-5xl text-center text-white">
           TRAVEL <br />
           <span className="">ALL TIME</span>
         </h1>
-        <p className=" text-3xl text-white mt-10">Enjoy Your Travel Spot</p>
-        <button className="btn w-full mt-10 rounded-full bg-[#f39c12]  text-white hover:text-orange-500">
+        <p className=" lg:text-3xl text-white mt-10">Enjoy Your Travel Spot</p>
+        <button className="btn lg:w-full mt-10 ml-9 rounded-full bg-[#f39c12] text-xl  text-white hover:text-orange-500">
           Book Now
         </button>
       </div>

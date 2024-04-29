@@ -25,12 +25,12 @@ const router = createBrowserRouter([
       {
         path:"/",
         element:<Home></Home>,
-        loader:()=>fetch('http://localhost:5000/spot')
+        loader:()=>fetch('https://assingment-10-server-three.vercel.app/spot')
       },
       {
         path:"/allTSport",
         element:<AllTSport></AllTSport>,
-        loader:()=>fetch('http://localhost:5000/spot')
+        loader:()=>fetch('https://assingment-10-server-three.vercel.app/spot')
       },
       {
         path:"/addTSport",
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
       {
         path:'/viewDetail/:id',
         element:<PrivetRout><ViewDetail></ViewDetail></PrivetRout>,
-        // loader:()=>fetch(`http://localhost:5000/spot`)
+        // loader:()=>fetch(`https://assingment-10-server-three.vercel.app/spot`)
 
       },
       {
