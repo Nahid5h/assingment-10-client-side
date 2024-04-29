@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="footer mt-9 p-10 bg-base-300 text-base-content">
+    <footer className="footer mt-9 p-10 bg-base-300 text-base-content rounded-2xl">
     <nav>
     <a className="btn btn-ghost text-3xl text-[#f39c12] ">
           TravelNestle.com
