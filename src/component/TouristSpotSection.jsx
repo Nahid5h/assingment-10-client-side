@@ -6,8 +6,9 @@ const TouristSpotSection = () => {
   return (
     //  <div className="bg-slate-600">
     <div className="grid lg:grid-cols-3 gap-8 mt-8 ">
+   
       {spot.map((s) => (
-        <div key={s._id} className="">
+        <div key={s._id} className="">   
           <div className="card h-[600px]  bg-base-100 shadow-xl">
             <figure className="px-5 pt-10">
               <img className="rounded-xl" src={s.image} alt="" />
