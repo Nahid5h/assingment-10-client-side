@@ -3,6 +3,8 @@
 const TravelNestle = () => {
   return (
     <div className="relative mt-9">
+
+        <h2 className="text-3xl text-center mb-6">INFORMATION</h2>
       <div>
         <img
           className="rounded-xl h-[500px] w-full"
@@ -10,7 +12,7 @@ const TravelNestle = () => {
           alt=""
         />
       </div>
-      <div className="absolute top-20 ">
+      <div className="absolute top-40 ">
         <p className="text-center text-white text-xl lg:ml-72 items-center">
           Travelnestle.com is a comprehensive online platform offering travel
           enthusiasts a wide array of <br /> accommodation options worldwide.

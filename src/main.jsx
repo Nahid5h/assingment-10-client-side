@@ -16,11 +16,13 @@ import AuthProvider from './providers/AuthProvider.jsx';
 import PrivetRout from './privetRout/PrivetRout.jsx';
 import ViewDetail from './component/ViewDetail.jsx';
 import UpdateINformation from './component/UpdateINformation.jsx';
+import ErrorPase from './component/ErrorPase.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+   errorElement:<ErrorPase></ErrorPase>,
     children:[
       {
         path:"/",

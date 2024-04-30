@@ -4,10 +4,10 @@ const images = [
   "https://picsum.photos/200/300?image=1050",
   //...
   "https://picsum.photos/300/300?image=206",
-  "https://picsum.photos/300/300?image=206",
-  "https://picsum.photos/300/300?image=206",
-  "https://picsum.photos/300/300?image=206",
-  "https://picsum.photos/300/300?image=206",
+  "https://i.ibb.co/hdTxT6P/pexels-souvenirpixels-417074.jpg",
+  "https://i.ibb.co/8Dk4c7j/shan-elahi-DDi-LYt-F88w-unsplash.jpg",
+  "https://i.ibb.co/XS6Wwh6/sk-Q6s-RAxs-AX68-unsplash.jpg",
+  "https://i.ibb.co/Mg4jTmL/patrick-robert-doyle-2-POWJYKXM5-Q-unsplash.jpg",
 ];
 const ShowGallary = () => {
   return (
