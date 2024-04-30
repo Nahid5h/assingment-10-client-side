@@ -29,8 +29,8 @@ const Login = () => {
 
   }
   return (
-    <div className=" flex justify-center items-center mt-7">
-        <div className="p-5 lg:p-40 rounded-md shadow-2xl bg-base-100 w-[50%] lg:rounded-full">
+    <div className=" flex justify-center items-center mt-7 ">
+        <div className="p-5  w-full lg:p-40 rounded-3xl shadow-2xl bg-base-100 ">
       <h1 className="font-bold text-2xl text-center text-orange-500">
         Login Here
       </h1>

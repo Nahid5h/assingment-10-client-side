@@ -34,7 +34,7 @@ const Register = () => {
   }
     return (
         <div className=" flex justify-center items-center mt-7">
-        <div className="p-5 lg:p-40 rounded-md shadow-2xl bg-base-100 w-[50%] lg:rounded-full">
+        <div className="p-5 lg:p-40 rounded-md shadow-2xl bg-base-100 w-full lg:rounded-full">
       <h1 className="font-bold text-2xl text-center text-orange-500">
       Register  Here
       </h1>

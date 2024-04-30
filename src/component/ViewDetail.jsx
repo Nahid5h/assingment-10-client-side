@@ -14,11 +14,11 @@ const ViewDetail = () => {
       });
   }, [id]);
   return (
-    <div>
-        <h1 className="text-4xl font-bold text-amber-400 text-center">this is view all the  information</h1>
-      <div className="mt-10 flex  gap-11 ">
+    <div className="">
+        <h1 className=" lg:text-4xl font-bold text-amber-400 text-center">this is view all the  information</h1>
+      <div className="mt-10 flex flex-col  gap-11 ">
         <div className="flex-1  flex items-center py-10 rounded-2xl justify-center  ">
-          <img className=" h-[711px]  rounded-2xl  " src={item.image} alt="" />
+          <img className=" h-[711px] w-full  rounded-2xl  " src={item.image} alt="" />
         </div>
         <div className="flex-1 ">
           <h1 className="text-5xl font-semibold">
@@ -30,7 +30,7 @@ const ViewDetail = () => {
           <p className="my-8 text-2xl">{item.description} </p>
           <hr />
           <p className="my-8 text-2xl">Location :{item.location}</p>
-          <div className="flex gap-6 my-8 text-2xl  ">
+          <div className="flex flex-col gap-6 my-8 text-2xl  ">
             <button className="btn rounded-full text-[#23BE0A] text-2xl">
               Season: {item.seasonality}{" "}
             </button>
@@ -44,10 +44,10 @@ const ViewDetail = () => {
 
           <hr />
 
-          <div className="my-8 text-2xl space-y-4">
-            <p>
+          <div className="my-8 text-2xl space-y-4 ">
+            <p className="">
               User Name :{" "}
-              <span className="font-bold ml-28">
+              <span className="font-bold lg:ml-28">
                 <button className="btn rounded-full text-[#FFFFFF] text-2xl bg-[#50B1C9]">
                   {item.name}{" "}
                 </button>
