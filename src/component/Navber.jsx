@@ -105,12 +105,18 @@ const Navber = () => {
       <div className="navbar-end gap-3">
         {user ? (
           <div className="flex items-center ">
-            <div className="tooltip" data-tip={user?.displayName || 'user name not found'}>
-            <div className="avatar">
+            <div
+              className="tooltip"
+              data-tip={user?.displayName || "user name not found"}
+            >
+              <div className="avatar">
                 <div className=" w-10 rounded-full">
-                  <img src={user?.photoURL ||"https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                  
-                  } />
+                  <img
+                    src={
+                      user?.photoURL ||
+                      "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                    }
+                  />
                 </div>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const Login = () => {
@@ -19,12 +20,21 @@ const Login = () => {
     .then(result =>{
 
       console.log(result.user);
-      navigate(location?.state ? location.state:'/')
-
-
-    })
+      if(result.user){
+        Swal.fire({
+          title: 'Success',
+          text: 'login Successfully',
+          icon: 'success',
+          confirmButtonText: 'OK'
+        })
+        navigate(location?.state ? location.state:'/')
+      }
+ 
+    }
+  )
     .catch(error =>{
     console.error(error)
+
     })
 
   }
